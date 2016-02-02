@@ -1,0 +1,102 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title Borja Design  
+		meta(name="description", content="Website Portfolio")
+		meta(name="author", content="Joe Borja")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+		meta(name="google-site-verification", content="v40A6KXNn-Eyle_YFk8Ylgl9OVJeVjjlCsuirAqvd-s")
+		link(rel="stylesheet", href="/assets/css/styles.css")
+		link(rel="icon", type="image/png", href="/assets/img/favicon.png")
+		
+		//this website was created using Jade, Sass, and JavaScript by Joe Borja of Borja Design 2015. I put a lot of love into this project. If you have questions about my approach, drop me a line and I'll explain it in full color using hand puppets.
+    
+	body
+  
+		header.picture-box
+			.logo
+
+		nav(class="nav", role="custom-dropdown")
+			input(type="checkbox", id="button")
+			label(for="button", onclick)
+			ul
+				li: a(href="index.html") home
+				li: a(href="#about") about
+				li: a(href="#borja-pics") photography
+				li: a(href="#graphic-arts") graphics
+				li: a(href="#contact") contact
+				li: a(href="#blog") blog
+
+
+		section.content
+			article
+				h1 About
+
+				p.about-lead Thanks for dropping in to my corner of utopia. I started Borja Design as a personal outlet for creative growth. I work freelance in photography, graphic design and front end development. My goal is creating visual concepts in graphic designs and web development for local businesses around Los Angeles. As you grow, I grow, too.
+
+				.image-wrap
+					//h4
+					//	|		People are 
+						//span#wss
+
+				p.about-lead Moreover, having this website has kept me in touch with my community and adds a wonderful way of expressing my vision through visual art and web design. For more about me click below.
+				a.button(href='https://www.linkedin.com/pub/joe-borja/87/b29/186') I'm Linkedin
+				
+				hr
+				
+				h1 Let's Get Started
+				.large-window
+
+				hr
+
+
+				h1 Photography
+				p.photo-lead I’m an ardent fanatic when it comes to photography. As a photographer, capturing light in a box, filled with whimsy and artistically composed is what I strive for.  
+				a.button(a href="http://www.flickr.com/photos/borjamatic/") Flickr Me
+
+				.borja-pics
+					include ./assets/includes/borja-pics.jade
+				
+				p.photo-lead Above are a few samples of my work. I shoot digital as well as film photography.
+
+				hr
+
+				h1 Graphics
+				p.graphics-lead Creating media and concept designs for start up businesses around Los Angeles is my goal. As you grow, I grow, too. Moreover, staying active within my community and remaining active on social networks adds a way of expressing my vision through visual art and web design.
+				a.button(a href="https://www.behance.net/BorjaDesign") Behance
+
+				.graphic-arts
+					include ./assets/includes/graphic-arts.jade
+
+				hr
+
+				h1 Web Design
+				.web-dev
+					include ./assets/includes/web-dev.jade
+
+				hr
+
+				h1 My Videos
+				p.video-lead As you can see, I do love the Venice Canals. I love a good movie, too. However, this ain't it. I was wandering around my favorite part of the westside of Los Angeles. Venice beach and all its denizens.  In the meantime, consider this as a moment of zen. I'm sure Alan Watts would agree while vaping with Siddhartha.
+
+				.videoWrapper
+							iframe(width="1280", height="720", src="https://www.youtube.com/embed/j61TtoAsAuA", frameborder="0", allowfullscreen)
+				hr
+
+				.embed-blog
+					include ./assets/includes/embed-blog.jade
+				
+				hr
+
+				h1 That's It
+				p At least for now until I find new ways to break the internet, or my website at least. This is after all, beta .01 version. Not to worry. I will keep putting stuff up and tearing it down.  Thanks for dropping in.  Until then, Keep on Hacking.
+
+				hr
+
+
+
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script(src="/assets/js/min/functions-min.js")
+		//script(src="/assets/js/wordslide.js")
